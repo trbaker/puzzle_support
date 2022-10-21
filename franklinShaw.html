@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<font size="+1">
+City name: 
+<input id="numb"> <br />
+<br />
+  <button type="button" onclick="city()">Submit</button>
+<br />
+  <p id="demo"><b></p>
+  
+<script>
+function city() {
+  let x = document.getElementById("numb").value;
+  let text;
+  if (x == 'Karaganda' || x == 'karaganda' || x == 'KARAGANDA') {
+    text = "Your city is correct. Good job!";
+  } else {
+    text = "Incorrect.  Try again!";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
