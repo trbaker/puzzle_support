@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<font size="+1">
+Latitude of missing ship (<i>format:-14.3</i>): 
+<input id="numb"> <br />
+  Longitude of missing ship:
+ <input id="numb2"> <br />
+<button type="button" onclick="latitude();longitude()">Submit</button>
+<br />
+  <p id="demo"><b></p>
+  
+<script>
+function latitude() {
+  let x = document.getElementById("numb").value;
+  let y = document.getElementById("numb2").value;
+  let text;
+  if (isNaN(x) || x < -10.8 || x > -8.8 || isNaN(y) || y < -66.1 || y > -64.1) {
+    text = "Your location is incorrect. Try again.";
+  } else {
+    text = "Well done!  You found the missing ship!";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html> 
