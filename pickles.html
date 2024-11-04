@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<font size="+1">
+Latitude (<i>format:-14</i>): 
+<input id="numb"> <br />
+  Longitude:
+ <input id="numb2"> <br />
+<button type="button" onclick="latitude();longitude()">Submit</button>
+<br />
+  <p id="demo"><b></p>
+  
+<script>
+function latitude() {
+  let x = document.getElementById("numb").value;
+  let y = document.getElementById("numb2").value;
+  let text;
+  if (isNaN(x) || x < -79.1 || x > -77.6 || isNaN(y) || y < 1 || y > -1.) {
+    text = "Your location is incorrect. Try again.";
+  } else {
+    text = "Well done!  You found the home of Pickles";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html> 
