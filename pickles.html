@@ -15,7 +15,7 @@ function latitude() {
   let x = document.getElementById("numb").value;
   let y = document.getElementById("numb2").value;
   let text;
-  if (isNaN(x) || x < -122.1 || x > -121.9 || isNaN(y) || y < 46.9 || y > 47.1) {
+  if (isNaN(x) || x < 46.9 || x > 47.1 || isNaN(y) || y > -121.9 || y < -122.1) {
     text = "Your location is incorrect. Try again.";
   } else {
     text = "Well done!  You found the home of Pickles";
@@ -24,5 +24,6 @@ function latitude() {
 }
 </script>
 
+  <br>version 1.1
 </body>
 </html> 
