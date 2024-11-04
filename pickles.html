@@ -7,6 +7,7 @@ Latitude (<i>format:45</i>):
   Longitude (<i>format:-95</i>):
  <input id="numb2"> <br />
 <button type="button" onclick="latitude();longitude()">Submit</button>
+  <input type="reset">
 <br />
   <p id="demo"><b></p>
   
@@ -18,7 +19,7 @@ function latitude() {
   if (isNaN(x) || x < 46.9 || x > 47.1 || isNaN(y) || y > -121.9 || y < -122.1) {
     text = "Your location is incorrect. Try again.";
   } else {
-    text = "Well done!  You found the home of Pickles";
+    text = "Well done!  You found the home of Pickles the turkey.";
   }
   document.getElementById("demo").innerHTML = text;
 }
