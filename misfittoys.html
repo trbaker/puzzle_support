@@ -5,7 +5,7 @@
 Latitude of the Misfit Island (<i>format:-14.3</i>): 
 <input id="numb"> <br />
   Longitude of the Misfit Island:
- <input id="numb2"> <br />
+ <input id="numb2"> <br /><br />
 <button type="button" onclick="latitude();longitude()">Submit</button>
 <br />
   <p id="demo"><b></p>
@@ -15,7 +15,7 @@ function latitude() {
   let x = document.getElementById("numb").value;
   let y = document.getElementById("numb2").value;
   let text;
-  if (isNaN(x) || x < 81.8 || x > 75.8 || isNaN(y) || y < -121.1 || y > -99.1) {
+  if (isNaN(x) || x < 81.8 || x > 73.8 || isNaN(y) || y > -121.1 || y < -99.1) {
     text = "Your location is incorrect. Try again.";
   } else {
     text = "Well done!  You found the most likely area of the Misfit Island!";
